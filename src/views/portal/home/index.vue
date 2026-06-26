@@ -15,8 +15,8 @@ import { $t } from '@/locales';
 import { useAppStore } from '@/store/modules/app';
 import { useThemeStore } from '@/store/modules/theme';
 import { useSeo } from '@/composables/useSeo';
-import homethinkLight from '../assests/home/homethink.jpg';
-import homethinkDark from '../assests/home/homethink_b.jpg';
+import homethinkLight from '../assests/home/homethink.png';
+import homethinkDark from '../assests/home/homethink_b.png';
 
 defineOptions({
   name: 'PortalHome'
@@ -868,16 +868,16 @@ const currentPage = computed(() => {
           <div class="hero-right flex justify-end">
             <div class="circle-container">
               <div class="circle circle-1 circle-animate circle-animate-1" >
-                <img src="../assests/home/t1.jpg" alt="circle" class="circle-image" />
+                <img src="../assests/home/t1.png" alt="circle" class="circle-image" />
               </div>
               <div class="circle circle-2 circle-animate circle-animate-2">
-                <img src="../assests/home/t2.jpg" alt="circle" class="circle-image" />
+                <img src="../assests/home/t2.png" alt="circle" class="circle-image" />
               </div>
               <div class="circle circle-3 circle-animate circle-animate-3" >
-                <img src="../assests/home/t3.jpg" alt="circle" class="circle-image" />
+                <img src="../assests/home/t3.png" alt="circle" class="circle-image" />
               </div>
               <div class="circle circle-4 circle-animate circle-animate-4">
-                <img src="../assests/home/t4.jpg" alt="circle" class="circle-image" />
+                <img src="../assests/home/t4.png" alt="circle" class="circle-image" />
               </div>
             </div>
           </div>
@@ -910,8 +910,8 @@ const currentPage = computed(() => {
             <div class="center-section">
               <div class="category-label observation-hypothesis">OBSERVATION</div>
               <div class="arrows-container">
-                <img src="../assests/home/arrl.jpg" alt="" class="arrow-img">
-                <img src="../assests/home/arrr.jpg" alt="" class="arrow-img">
+                <img src="../assests/home/arrl.png" alt="" class="arrow-img">
+                <img src="../assests/home/arrr.png" alt="" class="arrow-img">
               </div>
               <div class="category-label observation-hypothesis">HYPOTHESIS</div>
             </div>
@@ -1035,7 +1035,7 @@ const currentPage = computed(() => {
           <div class="follow-card" v-for="item in followUsList" :key="item.id" @click="toNewTab(item.link)">
             <div class="flex justify-between">
               <div class="dh">
-                <img src="../assests/home/dh.jpg" alt="">
+                <img src="../assests/home/dh.png" alt="">
               </div>
               <div class="follow-quote">
                 <!-- <span class="quote-icon">「</span>
@@ -1058,7 +1058,7 @@ const currentPage = computed(() => {
           <!-- <div class="follow-card">
             <div class="flex justify-between">
               <div class="dh ">
-                <img src="../assests/home/dh.jpg" alt="">
+                <img src="../assests/home/dh.png" alt="">
               </div>
               <div class="follow-quote">
                 <span class="quote-icon">「</span>
@@ -1098,16 +1098,16 @@ const currentPage = computed(() => {
     <footer class="follow-footer">
       <div class="follow-social-links">
         <div class="follow-social" @click="toNewTab('https://github.com/GenSI-THUAIR')">
-          <img src="../assests/home/github.jpg" alt="">
+          <img src="../assests/home/github.png" alt="">
         </div>
         <div class="follow-social" @click="toNewTab('https://huggingface.co/GenSI')">
-          <img src="../assests/home/huggingface.jpg" alt="">
+          <img src="../assests/home/huggingface.png" alt="">
         </div>
         <div class="follow-social" @click="toNewTab('https://x.com/hello_gensi')">
-          <img src="../assests/home/x.jpg" alt="">
+          <img src="../assests/home/x.png" alt="">
         </div>
         <div class="follow-social" @click="toNewTab('https://www.youtube.com/@hello_gensi')">
-          <img src="../assests/home/youtube.jpg" alt="">
+          <img src="../assests/home/youtube.png" alt="">
         </div>
       </div>
     </footer>
@@ -1154,7 +1154,7 @@ const currentPage = computed(() => {
 }
 
 .arrowbox {
-  background-image: url('../assests/home/by.jpg');
+  background-image: url('../assests/home/by.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   opacity: 1;
@@ -1171,7 +1171,7 @@ const currentPage = computed(() => {
 
 
 .dh {
-  background-image: url('../assests/home/dhbg.jpg');
+  background-image: url('../assests/home/dhbg.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -1323,7 +1323,7 @@ const currentPage = computed(() => {
 
   top: 0;
   left: 0;
-  background-image: url('../assests/home/y1.jpg');
+  background-image: url('../assests/home/y1.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
@@ -1333,7 +1333,7 @@ const currentPage = computed(() => {
 .circle-2 {
   top: 0;
   right: 0;
-  background-image: url('../assests/home/y2.jpg');
+  background-image: url('../assests/home/y2.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
@@ -1341,7 +1341,7 @@ const currentPage = computed(() => {
 .circle-3 {
   bottom: 0;
   left: 0;
-  background-image: url('../assests/home/y3.jpg');
+  background-image: url('../assests/home/y3.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
@@ -1349,7 +1349,7 @@ const currentPage = computed(() => {
 .circle-4 {
   bottom: 0;
   right: 0;
-  background-image: url('../assests/home/y4.jpg');
+  background-image: url('../assests/home/y4.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
@@ -2561,6 +2561,10 @@ const currentPage = computed(() => {
   z-index: 1;
 }
 
+.follow-card .arrowbox {
+  z-index: 1;
+}
+
 .follow-quote {
   font-size: 1.25rem;
   line-height: 1.5;
@@ -2606,13 +2610,13 @@ const currentPage = computed(() => {
 }
 
 .platform-icon.wechat {
-  background-image: url('../assests/home/wx.jpg');
+  background-image: url('../assests/home/wx.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 
 .platform-icon.xiaohongshu {
-  background-image: url('../assests/home/rn.jpg');
+  background-image: url('../assests/home/rn.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
@@ -2650,6 +2654,7 @@ const currentPage = computed(() => {
 
 .gensi-home.is-dark .research-section {
   background-color: #121212;
+  background-image: none;
 }
 
 .gensi-home.is-dark .research-categories-centered img {
@@ -2841,8 +2846,20 @@ const currentPage = computed(() => {
   background: #0d4a5e;
 }
 
-.gensi-home.is-dark .arrowbox {
-  filter: brightness(0.8) invert(0.1);
+.gensi-home.is-dark .follow-card .arrowbox {
+  filter: none;
+  background-image: radial-gradient(
+    circle closest-side at 100% 100%,
+    #0d4a5e 0,
+    #0d4a5e 99%,
+    transparent 100%
+  );
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.gensi-home.is-dark .follow-card .arrowbox .arrow-icon {
+  color: #9ee8ff;
 }
 
 
